@@ -168,7 +168,8 @@ public class MatchingMorseScript : MonoBehaviour {
         Match m = Regex.Match(command, @"^(?:MATCH|PRESS)((?:\s+[TMB][LMR])+)$");
         if (m.Success)
         {
-            foreach (string coor in m.Groups[1].Value.Split(' '))
+            yield return null;
+            foreach (string coor in m.Groups[1].Value.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries))
             {
                 buttons[Array.IndexOf(coords, coor)].OnInteract();
                 yield return new WaitForSeconds(0.25f);
