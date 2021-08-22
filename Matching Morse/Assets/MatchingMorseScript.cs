@@ -21,7 +21,7 @@ public class MatchingMorseScript : MonoBehaviour {
     static int moduleIdCounter = 1;
     int moduleId;
     private bool moduleSolved;
-    private List<char> alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".ToList();
+    private List<char> alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToList();
     private char[] dispChars = new char[9];
     private int? currentSelected = null;
     private string[] sequences = new string[9];

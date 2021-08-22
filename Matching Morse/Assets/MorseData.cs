@@ -7,7 +7,7 @@ public static class MorseData
     public static readonly Dictionary<char, string> MorseTranslation = new Dictionary<char, string>()
     {
         { 'A', ".-"   },
-        { 'B', "...-" },
+        { 'B', "-..." },
         { 'C', "-.-." },
         { 'D', "-.."  },
         { 'E', "."    },
@@ -32,16 +32,6 @@ public static class MorseData
         { 'X', "-..-" },
         { 'Y', "-.--" },
         { 'Z', "--.." },
-        { '0', "-----"},
-        { '1', ".----"},
-        { '2', "..---"},
-        { '3', "...--"},
-        { '4', "....-"},
-        { '5', "....."},
-        { '6', "-...."},
-        { '7', "--..."},
-        { '8', "---.."},
-        { '9', "----."},
     };
 
     public static string GenerateSequence(char ch)
